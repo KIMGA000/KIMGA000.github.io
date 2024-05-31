@@ -1,165 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
-  <title>GAYEONG KIM | Personal Website</title>
-  <link rel="stylesheet" href="./styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./script.js"></script>
 </head>
-
 <body>
-  <!-- 상단 -->
-  <div id="header">
-    <a href="" class="title">GAYEONG KIM</a>
-    <nav>
-      <ul>
-        <li><a href="#home" class="nav">HOME</a></li>
-        <li><a href="#history" class="nav">HISTORY</a></li>
-        <li><a href="#skill" class="nav">SKILL</a></li>
-      </ul>
-    </nav>
-  </div>
-
-  <!-- 메인 -->
-  <div id="content">
-    <!-- 홈(자기 소개) 페이지 구역 -->
-    <div id="home" class="page active">
-      <img src="./image/me.jpg" alt="My Photo" class="photo">
-      <div class="info">
-        <h1>About me</h1>
-        <ul class="infoList">
-          <li><span class="label">NAME</span><span class="value">Kim Ga-young</span></li>
-          <li><span class="label">AGE</span><span class="value">24</span></li>
-          <li><span class="label">MBTI</span><span class="value">INFJ</span></li>
-          <li><span class="label">MAJOR</span><span class="value">Computer Science</span></li>
-          <li><span class="label">HOBBY</span><span class="value">Badminton, Watching movies</span></li>
-          <li><span class="label">E-MAIL</span><span class="value"><a href="mailto:rkdud54@kangwon.ac.kr">rkdud54@kangwon.ac.kr</a></span></li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- 개인 연혁 페이지 구역 -->
-    <div id="history" class="page">
-      <div>
-        <h2>2001</h2>
-        <ol>
-          <li>5월 출생</li>
-        </ol>
-      </div>
-      <div>
-        <h2>2008</h2>
-        <ol>
-          <li>3월 태장초등학교 입학</li>
-        </ol>
-      </div>
-      <div>
-        <h2>2009</h2>
-        <ol>
-          <li>2월 명륜초등학교 전학</li>
-        </ol>
-      </div>
-      <div>
-        <h2>2014</h2>
-        <ol>
-          <li>2월 명륜초등학교 졸업</li>
-          <li>3월 반곡중학교 입학</li>
-        </ol>
-      </div>
-      <div>
-        <h2>2017</h2>
-        <ol>
-          <li>2월 반곡중학교 졸업</li>
-          <li>3월 원주의료고등학교 의료전기전자과 입학</li>
-        </ol>
-      </div>
-      <div>
-        <h2>2019</h2>
-        <ol>
-          <li>3월 부전공 바이오과 이수</li>
-          <li>10월 성이바이오(주) 품질관리팀 입사</li>
-        </ol>
-      </div>
-      <div>
-        <h2>2020</h2>
-        <ol>
-          <li>1월 원주의료고등학교 졸업</li>
-          <li>2월 성이바이오(주) 퇴사</li>
-          <li>9월~12월 효성ITX(주) 체험형 인턴(국민건강보험공단 데이터운영부 파견 근무)</li>
-        </ol>
-      </div>
-      <div>
-        <h2>2021</h2>
-        <ol>
-          <li>6월~12월 일경험 수련생(한국광해광업공단 탐사1팀)</li>
-        </ol>
-      </div>
-      <div>
-        <h2>2022</h2>
-        <ol>
-          <li>1월~7월 삼성전자 Foundry 사업부 8인치제조기술팀 DIFF 라인 근무</li>
-        </ol>
-      </div>
-      <div>
-        <h2>2023</h2>
-        <ol>
-          <li>3월 강원대학교 춘천캠퍼스 IT대학 컴퓨터공학과 입학</li>
-        </ol>
-      </div>
-      <div>
-        <h2>2024</h2>
-        <ol>
-          <li>현재 강원대학교 재학중</li>
-        </ol>
-      </div>
-    </div>
-
-    <!-- 스펙 페이지 구역 -->
-    <div id="skill" class="page">
-      <div class="computerScience">
-        <h2>컴퓨터공학 관련 보유기술/자격증</h2>
-        <ul>
-          <li>앞으로 더 추가될 예정입니다.</li>
-          <li>경험 언어 : JAVA, C, Python</li>
-          <li>경험 프레임워크 : Spring Boot</li>
-          <li>컴퓨터활용능력 1급(2021.3 취득)</li>
-        </ul>
-      </div>
-      <div class="language">
-        <h2>언어 관련 자격증</h2>
-        <ul>
-          <li>앞으로 더 추가될 예정입니다.</li>
-          <li>영어 : 공부하겠습니다.</li>
-          <li>일어 : 공부하겠습니다.</li>
-          <li>중국어 : 공부하겠습니다.</li>
-        </ul>
-      </div>
-      <div class="electricElectronic">
-        <h2>전기전자공학 관련 자격증</h2>
-        <ul>
-          <li>전자캐드기능사(2018.9 취득)</li>
-          <li>전기기능사(2018.9 취득)</li>
-          <li>의료전자기능사(2017.10 취득)</li>
-        </ul>
-      </div>
-      <div class="etc">
-        <h2>그외 보유기술/자격증</h2>
-        <ul>
-          <li>한국사능력검정시험 1급(2021.2 취득)</li>
-          <li>환경기능사(2019.7 취득)</li>
-          <li>승강기기능사(2019.6 취득)</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- 하단 -->
-  <footer id="footer">
-    <p>&copy; 2024 GAYEONG KIM. All rights reserved.</p>
-  </footer>
-
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="./script.js"></script>
+    <header>
+        <a href="" class="title">GAYEONG KIM</a>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav">HOME</a></li>
+                <li><a href="#history" class="nav">HISTORY</a></li>
+                <li><a href="#skill" class="nav">SKILL</a></li>
+                <li><a href="#schedule" class="nav">SCHEDULE</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="page active">
+            <img src="./image/me.jpg" class="home-photo" alt="My Photo" >
+            <div class="home-info">
+                <h1 class="info-title">About me</h1>
+                <ul class="info-list">
+                    <li><span class="label">NAME</span><span class="value">Kim Ga-young</span></li>
+                    <li><span class="label">AGE</span><span class="value">24</span></li>
+                    <li><span class="label">MBTI</span><span class="value">INFJ</span></li>
+                    <li><span class="label">MAJOR</span><span class="value">Computer Science</span></li>
+                    <li><span class="label">HOBBY</span><span class="value">Badminton, Watching movies</span></li>
+                    <li><span class="label">E-MAIL</span><span class="value"><a href="mailto:rkdud54@kangwon.ac.kr">rkdud54@kangwon.ac.kr</a></span></li>
+                </ul>
+            </div>
+        </section>
+        <section id="history" class="page">
+            <div>
+                <h2>2001</h2>
+                <ul>
+                    <li>5월 출생</li>
+                </ul>
+            </div>
+            <div>
+                <h2>2008</h2>
+                <ul>
+                    <li>3월 태장초등학교 입학</li>
+                </ul>
+            </div>
+            <div>
+                <h2>2009</h2>
+                <ul>
+                    <li>2월 명륜초등학교 전학</li>
+                </ul>
+            </div>
+            <div>
+                <h2>2014</h2>
+                <ul>
+                    <li>2월 명륜초등학교 졸업</li>
+                    <li>3월 반곡중학교 입학</li>
+                </ul>
+            </div>
+            <div>
+                <h2>2017</h2>
+                <ul>
+                    <li>2월 반곡중학교 졸업</li>
+                    <li>3월 원주의료고등학교 의료전기전자과 입학</li>
+                </ul>
+            </div>
+            <div>
+                <h2>2019</h2>
+                <ul>
+                    <li>3월 부전공 바이오과 이수</li>
+                    <li>10월 성이바이오(주) 품질관리팀 입사</li>
+                </ul>
+            </div>
+            <div>
+                <h2>2020</h2>
+                <ul>
+                    <li>1월 원주의료고등학교 졸업</li>
+                    <li>2월 성이바이오(주) 퇴사</li>
+                    <li>9월~12월 효성ITX(주) 체험형 인턴(국민건강보험공단 데이터운영부 파견 근무)</li>
+                </ul>
+            </div>
+            <div>
+                <h2>2021</h2>
+                <ul>
+                    <li>6월~12월 일경험 수련생(한국광해광업공단 탐사1팀)</li>
+                </ul>
+            </div>
+            <div>
+                <h2>2023</h2>
+                <ul>
+                    <li>3월 강원대학교 춘천캠퍼스 IT대학 컴퓨터공학과 입학</li>
+                </ul>
+            </div>
+            <div>
+                <h2>2024</h2>
+                <ul>
+                    <li>현재 강원대학교 재학중</li>
+                </ul>
+            </div>
+        </section>
+        <section id="skill" class="page">
+            <div class="computerScience">
+                <h2>컴퓨터공학 관련 보유기술/자격증</h2>
+                <ul>
+                    <li>앞으로 더 추가될 예정입니다.</li>
+                    <li>경험 언어 : JAVA, C, Python</li>
+                    <li>경험 프레임워크 : Spring Boot</li>
+                    <li>컴퓨터활용능력 1급(2021.3 취득)</li>
+                </ul>
+              </div>
+              <div class="language">
+                <h2>언어 관련 자격증</h2>
+                <ul>
+                    <li>앞으로 더 추가될 예정입니다.</li>
+                    <li>영어 : 공부하겠습니다.</li>
+                    <li>일어 : 공부하겠습니다.</li>
+                    <li>중국어 : 공부하겠습니다.</li>
+                </ul>
+              </div>
+              <div class="electricElectronic">
+                <h2>전기전자공학 관련 자격증</h2>
+                <ul>
+                    <li>전자캐드기능사(2018.9 취득)</li>
+                    <li>전기기능사(2018.9 취득)</li>
+                    <li>의료전자기능사(2017.10 취득)</li>
+                </ul>
+              </div>
+              <div class="etc">
+                <h2>그외 보유기술/자격증</h2>
+                <ul>
+                    <li>한국사능력검정시험 1급(2021.2 취득)</li>
+                    <li>환경기능사(2019.7 취득)</li>
+                    <li>승강기기능사(2019.6 취득)</li>
+                </ul>
+              </div>
+        </section>
+        <section id="schedule" class="page">
+            <h1>2024년 2학년 1학기 시간표</h1>
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>월</th>
+                            <th>화</th>
+                            <th>수</th>
+                            <th>목</th>
+                            <th>금</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>7시</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>PT</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>8시</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                            <td>9시</td>
+                            <td></td>
+                            <td rowspan="2">리눅스</td>
+                            <td rowspan="2">리눅스</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                            <td>10시</td>
+                            <td rowspan="2">자료구조</td>
+                            <td rowspan="2">자료구조</td>
+                            <td rowspan="3">논리회로</td>
+                        </tr>
+                            <td>11시</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                            <td>12시</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                            <td>1시</td>
+                            <td rowspan="5">근로</td>
+                            <td></td>
+                            <td></td>
+                            <td rowspan="5">근로</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2시</td>
+                            <td rowspan="2">웹프로그래밍</td>
+                            <td rowspan="3">테니스</td>
+                            <td rowspan="2">웹프로그래밍</td>
+                        </tr>
+                        <tr>
+                            <td>3시</td>
+                        </tr>
+                        <tr>
+                            <td>4시</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>5시</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>6시</td>
+                            <td>이산수학</td>
+                            <td></td>
+                            <td>반도체개론</td>
+                            <td>알아두면쓸모있는신기한물리사전</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <p>&copy; 2024 GAYEONG KIM. All rights reserved.</p>
+    </footer>
 </body>
-
 </html>

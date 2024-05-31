@@ -1,139 +1,98 @@
-html,
-body {
-    height: 100%;
+* {
     margin: 0;
     padding: 0;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
-
 body {
-    position: relative;
+    height: 100%;
 }
-
-#header {
-    position: absolute;
+header {
+    position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
     background-color: lightgoldenrodyellow;
     color: black;
-    padding: 10px 10px;
+    padding: 10px 0;
     overflow: hidden;
     z-index: 1000;
-    /* 항상 상단에 있도록 설정 */
 }
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    float: right;
-    /* 상단 오른쪽으로 */
-}
-
-li {
-    display: inline-block;
-}
-
 .title {
-    float: left;
-    /* 상단 왼쪽으로 */
     font-size: 20px;
     font-weight: bold;
     color: black;
     text-decoration: none;
+    margin: 0 10px;
 }
-
+nav ul {
+    list-style-type: none;
+}
 .nav {
-    margin-right: 10px;
+    margin: 0 10px;
     color: gray;
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
-
 }
-
-.nav:hover,
-.nav:active {
+.nav:hover {
     color: black;
 }
 
-#content {
-    position: absolute;
-    top: 100px;
-    left: 0;
-    right: 0;
-    bottom: 100px;
-    overflow: auto;
+main {
+    margin-top: 20px;
 }
-
 #home {
     margin: 0 auto;
     width: 80%;
-}
-
-.photo {
-    max-width: 250px;
-    height: auto;
-    margin-right: 20px;
-    float: left;
-    border: 1px solid black;
-}
-
-.info {
     overflow: hidden;
 }
-
-#home h1 {
-    margin: 0;
+.home-photo {
+    max-width: 250px;
+    height: auto;
+    border: 1px solid black;
 }
-
-.infoList {
+.info-title {
+    margin-bottom: 20px;
+}
+.info-list {
     list-style: none;
-    padding: 0;
-
 }
-
-.infoList li {
+.info-list li {
     margin-bottom: 10px;
     display: block;
 }
-
 .label {
     display: inline-block;
     font-weight: bold;
     width: 80px;
 }
-
 .value {
     display: inline-block;
 }
-
 .value a {
     text-decoration: none;
     color: black;
 }
 
-
+main {
+    margin-top: calc(10vh + 10px);
+    margin-bottom: calc(10vh + 10px);
+    padding-top: calc(10vh + 10px);
+}
 #history {
-    margin: 0 auto;
+    margin:  auto;
     width: 80%;
     border-left: 2px solid #ccc;
-    position: relative;
 }
-
 #history::after {
     content: '';
     clear: both;
     display: table;
 }
-
 #history div {
     position: relative;
     padding-left: 50px;
     margin-bottom: 50px;
 }
-
 #history div::before {
     content: "";
     position: absolute;
@@ -141,11 +100,6 @@ li {
     top: 0;
     font-weight: bold;
 }
-
-#history h2 {
-    margin-top: 0;
-}
-
 #history h2::before {
     content: "";
     position: absolute;
@@ -159,8 +113,7 @@ li {
     border: 5px solid orange;
     box-sizing: border-box;
 }
-
-#history ol {
+#history ul {
     list-style: none;
     padding-left: 20px;
 }
@@ -169,23 +122,17 @@ li {
     margin: 0 auto;
     width: 80%;
 }
-
 #skill h2 {
     color: black;
-    margin: 0;
     margin-bottom: 10px;
 }
-
 #skill ul {
     list-style-type: none;
-    padding: 0;
 }
-
 #skill li {
     display: block;
     margin-bottom: 5px;
 }
-
 .computerScience,
 .language,
 .electricElectronic,
@@ -196,84 +143,77 @@ li {
     margin-bottom: 10px;
 }
 
-#footer {
-    position: absolute;
+#schedule {
+    margin: 0 auto;
+    width: 80%;
+}
+#schedule h1 {
+    color: black;
+    text-align: center;
+    margin: 10px 0;
+}
+.table{ 
+    border: 2px solid black; 
+    overflow:auto;
+    margin-bottom: 10px;
+}
+th, td { 
+    width: 15%;
+    height: auto;
+}
+thead tr > th:nth-child(n+2) { 
+    background-color: gray;
+    border: 1px solid black;
+    color: white;
+}
+td:first-child { 
+    font-weight: bold;
+}
+table {
+    text-align: center;
+    table-layout: fixed;
+    width: 100%;
+}
+tbody td {
+    border: 1px solid black;
+}
+
+footer {
+    position: fixed;
     bottom: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
     background-color: lightgray;
     color: black;
     text-align: center;
     padding: 10px 0;
+    z-index: 1000;
 }
-
 /* 화면이 작을 때 */
-@media (max-width: 700px) {
-    #header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        background-color: lightgoldenrodyellow;
-        text-align: center;
-        padding: 10px 0;
-        z-index: 1000;
-    }
-
-    .title {
-        float: none;
-        display: block;
-        font-size: 20px;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-
-    nav ul {
-        float: none;
-        text-align: center;
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
+@media (max-width: 699px) {
+    .title, nav ul {
         text-align: center;
     }
-
     .nav {
+        margin: 5px 0;
+    }
+    .home-photo {
+        margin-bottom: 20px;
+    }
+
+}
+/* 보통 */
+@media (min-width: 700px) {
+    .title {
+        float: left;
+    }
+    nav ul {
+        float: right;
+    }
+    nav li {
         display: inline-block;
-        margin: 5px 10px;
     }
-
-    #content {
-        position: relative;
-        padding-bottom: 100px;
-    }
-
-    #home,
-    #history,
-    #skill {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .photo {
-        float: none;
-        display: block;
-        margin: 0 auto 20px;
-    }
-
-    .info h1 {
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
-    #footer {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: lightgray;
-        color: black;
-        text-align: center;
-        padding: 10px 0;
-        z-index: 1000;
+    .home-photo {
+        margin-right: 20px;
+        float: left;
     }
 }
